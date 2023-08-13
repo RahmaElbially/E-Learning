@@ -68,6 +68,9 @@ header .head .navbar a{
     color: white;
     font-size: 2rem;
 }
+header .head .navbar a:hover{
+    color: var(--logo-color);
+}
 /* header .items ul{
     padding-top: 5px;
     display: flex;
