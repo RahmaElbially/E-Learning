@@ -1,0 +1,261 @@
+:root{
+    --background-color : #7C9D96;
+    --content-background : #A1CCD1;
+    --logo-color: #116A7B;
+    --list-color: #E9B384;
+    --button-color: #F4F2DE;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    transition: 0.5s linear;
+}
+body{
+    background-color: var(--background-color);
+}
+.login{
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    background-color: #f4f2de53;
+    border: 1px solid #FFF;
+    width: 40%;
+    height: 55%;
+    padding: 20px;
+}
+.login h2{
+    color: var(--logo-color);
+    text-align: center;
+    font-size: 3rem;
+}
+.login span{
+    font-size: 50px;
+    position: fixed;
+    top: 20%;
+    left: 67%;
+    cursor: pointer;
+    color: var(--logo-color);
+}
+.login span:hover{
+    color: white;
+}
+.login form{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding-top: 10px;
+}
+.login form input{
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.login form #Enter{
+    background-color: #116A7B;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin-left: 40%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.login form #Enter:hover{
+    color: var(--logo-color);
+    background-color: white;
+}
+.login form .ForgetsPassword{
+    color: white;
+    font-size: 20px;
+    margin-left: 35%;
+}
+.login form .ForgetsPassword:hover{
+    color:var(--logo-color);
+}
+.Login{
+    display: block;
+    z-index: 1;
+}
+.buttons{
+    position: fixed;
+    top: 85%;
+    left: 42%;
+    display: flex;
+    width: 270px;
+    height: 63px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    animation: HI 4s;
+}
+/* Login Button */
+.buttons .loginBtn{
+    margin-right: 40px;
+}
+.buttons .loginBtn a{
+    color: var(--logo-color);
+    background-color: white;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+.buttons .loginBtn a:hover{
+    color: var(--content-background);
+}
+/* Sign Up Button */
+.buttons .signupBtn a{
+    color: white;
+    background-color: var(--logo-color);
+    text-align: center;
+    font-size: 22px;
+    border-radius: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+.buttons .signupBtn a:hover{
+    color: var(--content-background);
+}
+/* Sign Up Form */
+.signUpForm{
+    background-color: #FFF;
+    position: fixed;
+    top: 10%;
+    left: 32%;
+    height: 500px;
+    width: 550px;
+    border-radius: 20px;
+    animation-name: zoom;
+    animation-duration: 1s;
+    padding-left: 25px;
+}
+/* h2 */
+.signUpForm h2{
+    color: var(--logo-color);
+    font-size: 2.3rem;
+    padding-top: 20px;
+}
+.signUpForm span{
+    font-size: 50px;
+    position: fixed;
+    top: 10%;
+    left: 65%;
+    cursor: pointer;
+    color: var(--logo-color);
+}
+.signUpForm span:hover{
+    color: var(--content-background);
+}
+/* quite p */
+.signUpForm .quite p{
+    margin-top: 20px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+/* after p */
+.signUpForm .quite p::after{
+    content: "";
+    width: 85%;
+    height: 1.5px;
+    background-color:#ddd;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+}
+/* Sign Up Form --> Form */
+.signUpForm form label{
+    display: block;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.signUpForm form input[type="text"], .signUpForm form input[type="password"], .signUpForm form input[type="email"]{
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid var(--logo-color);
+    margin-bottom: 15px;
+    margin-left: 15px;
+    width: 85%;
+    outline: none;
+}
+.signUpForm form input[type="text"]::placeholder, .signUpForm form input[type="password"]::placeholder, .signUpForm form input[type="email"]::placeholder, select{
+    color: #777;
+    font-size: 13px;
+}
+/* Sign Up Form --> radio Button */
+.signUpForm .radioButton{
+    display: flex;
+    margin-top: 10px;
+}
+.signUpForm .radioButton h3{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.signUpForm .radioButton input[type="radio"]{
+    margin-top: 7px;
+    margin-left: 5px;
+}
+/* Sign Up Form --> Select */
+.signUpForm .select{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.signUpForm .select h3{
+    padding-left: 15px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.signUpForm select{
+    margin-left: 10px;
+    border: 1px solid #000;
+    width: 70%;
+    border-radius: 3px;
+    outline: none;
+    padding: 8px;
+}
+/* Sign Up Form --> Link */
+.signUpForm #sign{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    text-decoration: none;
+    color: var(--logo-color);
+    font-size: 18px;
+    border: 1px solid var(--logo-color);
+    width: 120px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.signUpForm #sign:hover{
+    background-color: var(--logo-color);
+    color: #FFF;
+}
+.signUpForm{
+    display: none;
+}
+.Sign{
+    display: block;
+}
+.hide{
+    display: none;
+}

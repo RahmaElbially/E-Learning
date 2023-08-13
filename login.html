@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="buttons">
+        <div class="loginBtn">
+            <a href="http://127.0.0.1:5500/login.html?name=km&password=kmjkms&send=Login#" class="one">Sign In</a>
+        </div><!-- login -->
+        <div class="signupBtn">
+            <a href="#" class="two">Sign Up</a>
+        </div><!-- sign-up -->
+    </div><!-- buttons -->
+
+   <div class="login">
+        <h2>Welcome Back !</h2>
+        <span class="close" id="window-close">&times;</span>
+        <form action="">
+            <input type="text" required placeholder="Enter Your Name" maxlength="50" name="name" class="box"><br>
+            <input type="password" required placeholder="Enter Your Password" maxlength="50" name="password" class="box"><br>
+            <input type="submit" value="Login" name="send" id="Enter">
+            <a href="#" class="ForgetsPassword">Forget Password</a>
+        </form>
+   </div>
+
+   <div class="signUpForm">
+        <h2>Sign Up</h2>
+        <span class="close" id="window-close2">&times;</span>
+        <div class="quite">
+            <p>it's quite and easy</p>
+        </div><!-- quite -->
+        <form>
+            <label for="UserName">User Name</label>
+            <input type="text" required placeholder="Enter user name..">
+
+            <label for="UserPassword">Password</label>
+            <input type="password" required placeholder="Enter password..">
+
+            <label for="UserEmail">Email</label>
+            <input type="email" required placeholder="Enter email..">
+
+            <div class="radioButton">
+                <h3>Gender:</h3>
+
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+            </div><!-- radioButton -->
+
+            <div class="select">
+                <h3>City:</h3>
+                    <select name="country" id="country">
+                    <option value="Cairo" selected>Cairo</option>
+                    <option value="Mansoura">Mansoura</option>
+                    <option value="Fayoum">Fayoum</option>
+                    <option value="Banha">Banha</option>
+                </select>
+            </div><!-- select -->
+        </form><!-- End Form -->
+        <input type="submit" value="Sign Up" name="send" id="sign">
+    </div><!-- signUpForm -->
+
+    <script src="JS/login.js"></script>
+</body>
+</html>

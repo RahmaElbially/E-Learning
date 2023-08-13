@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;800&family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+    --background-color : #7C9D96;
+    --content-background : #A1CCD1;
+    --logo-color: #116A7B;
+    --list-color: #E9B384;
+    --button-color: #F4F2DE;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    transition: 0.5s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar{
+    height: 0.5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--logo-color);
+    border-radius: 5rem;
+}
+
+body{
+    background-color: var(--background-color);
+}
+/* Start Header */
+header{
+    background-color: var(--content-background);
+    padding: 15px 10%;
+    position: fixed;
+    left: 0; right: 0; top: 0;
+    z-index: 1000;
+}
+header .head{
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+header .logoName{
+    font-size: 30px;
+    color: var(--logo-color);
+    font-weight: bold;
+}
+header .head .navbar a{
+    margin-left: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+/* header .items ul{
+    padding-top: 5px;
+    display: flex;
+    list-style: none;
+}
+header .items ul li{
+    margin-right: 22px;
+}
+header .items ul li a{
+    color: white;
+    font-size: 20px;
+}
+header .items ul li a:hover{
+    color: var(--logo-color);
+} */
+header .buttons .login{
+    padding: 13px 35px;
+    border: 2px solid var(--logo-color);
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: var(--button-color);
+    color: var(--logo-color);
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 20px;
+}
+header .buttons .login:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+header .buttons .register{
+    padding: 13px 30px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: var(--logo-color);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+header .buttons .register:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+header #menu-btn{
+    cursor: pointer;
+    color: white;
+    font-size: 2.5rem;
+    display: none;
+}
+/* End Header */
+
+/* Start Home */
+.home{
+    margin-top: 9%;
+}
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+}
+.home .row .onlineEducation{
+    flex: 1 1 40rem;
+    text-align: center
+}
+.home .row .ELearnImage{
+    flex: 1 1 40rem;
+}
+.home .row .ELearnImage img{
+   width: 90%;
+   border-radius: 30px;
+}
+.home .row .onlineEducation h2{
+    margin-bottom: 1rem;
+    font-size: 10rem;
+    color: white;
+    line-height: 1;
+}
+.home .row .onlineEducation h2 span{
+    color: var(--logo-color);
+}
+.home .row .onlineEducation p{
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.home .row .onlineEducation .submit-file{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--content-background);
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.home .row .onlineEducation .submit-file:hover{
+    background-color: white;
+    color: var(--logo-color);
+}
+/* End Home */
+
+/* Start Counter */
+.counter{
+    display: flex;
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+.counter .counter-content{
+    display: flex;
+    background-color: var(--content-background);
+    margin-right: 50px;
+    width: 300px;
+    padding-top: 10px;
+    height: 85px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.counter .counter-content .counter-p{
+    margin-left: 25px;
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+.counter .counter-content .counter-p h3{
+    font-size: 20px;
+}
+/* End Counter */
+
+/* Start About */
+.about{
+    display: flex;
+    margin-left: 10%;
+    text-align: center;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+.about .image-about{
+    width: 45%;
+    margin-right: 10%;
+}
+.about .image-about img{
+    width: 100%;
+    border-radius: 5px;
+}
+.about .content-about{
+    padding-top: 10%;
+    color: white;
+    line-height: 1.5;
+}
+.about .content-about h2{
+    font-size: 35px;
+}
+.about .content-about p{
+    font-size: 15px;
+    color: #DDD;
+    line-height: 2;
+}
+.about .content-about .contactUS-about{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--content-background);
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+.about .content-about .contactUS-about:hover{
+    background-color: white;
+    color: var(--logo-color);
+}
+/* End About */
+
+/* Start Courses */
+.courses .courses-slider{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.courses h2, .courses h2 span{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.courses h2 span{
+    color: var(--logo-color);
+}
+.courses .courses-content{
+    background-color: var(--content-background);
+    margin: 25px 3% 50px 0;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    border-radius: .5rem;
+}
+.courses .courses-content img{
+    width: 100%;
+}
+.courses .courses-content h4{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+.courses .courses-content p{
+    font-size: 14px;
+    color: var(--logo-color);
+    line-height: 2;
+}
+/* End Courses */
+
+/* Start Teachers */
+.teachers .teachers-slider{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.teachers h2, .teachers h2 span{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.teachers h2 span{
+    color: var(--logo-color);
+}
+.teachers .teachers-content{
+    position: relative;
+    overflow: hidden;
+}
+.teachers .teachers-content img{
+    height: 55rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.teachers .teachers-content h4{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    text-align: center;
+}
+.teachers .teachers-content .share{
+    position: absolute;
+    top: 1rem;
+    left: -10rem;
+}
+.teachers .teachers-content:hover .share{
+    left: 2rem;
+}
+.teachers .teachers-content .share a{
+    display: block;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background-color: white;
+    color: var(--logo-color);
+    text-align: center;
+    font-size: 2rem;
+}
+.teachers .teachers-content .share a:hover{
+    background-color: var(--logo-color);
+    color: white;
+}
+/* End Teachers */
+
+/* Start Reviews */
+.reviews .reviews-slider{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.reviews h2, .reviews h2 span{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.reviews h2 span{
+    color: var(--logo-color);
+}
+.reviews .reviews-content{
+    background-color: var(--content-background);
+    margin: 25px 3% 50px 0;
+    padding: 30px;
+    justify-content: center;
+    border-radius: .5rem;
+}
+.reviews .reviews-content img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviews .reviews-content p{
+    font-size: 14px;
+    color: var(--logo-color);
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.reviews .reviews-content .rates{
+    display: flex;
+}
+.reviews .reviews-content .rates .content-rate{
+    margin: 20px 0px 0px 20px;
+}
+.reviews .reviews-content .rates .content-rate h3{
+    color: white;
+    font-size: 20px;
+}
+.reviews .reviews-content .rates .content-rate .stars{
+    margin-top: 10px;
+}
+.reviews .reviews-content .rates .content-rate .stars i{
+    font-size: 15px;
+    color: rgb(3, 163, 3);
+}
+/* End Reviews */
+
+/* Start Contact Us */
+.contact-us .contact-us-info{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    flex-wrap: wrap;
+}
+.contact-us h2, .contact-us span{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.contact-us span{
+    color: var(--logo-color);
+}
+.contact-us .contact-us-image{
+    width: 50%;
+}
+.contact-us .contact-us-image img{
+    width: 100%;
+}
+.contact-us .contact-us-info form label{
+    font-size: 1.6rem;
+    color: white;
+}
+.contact-us .contact-us-info form .box{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--content-background);
+    font-size: 1.8rem;
+    color: white;
+    padding: 1.4rem;
+    text-transform: none;
+}
+.contact-us .contact-us-info form .radio{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-us .contact-us-info form .radio label{
+    font-size: 1.6rem;
+    color: white;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+.contact-us .contact-us-info form .radio #female{
+    margin-left: 2rem;
+}
+.contact-us .contact-us-info form .radio input{
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: #ddd;
+    cursor: pointer;
+}
+.contact-us .contact-us-info form .radio input:checked{
+    background-color: var(--logo-color);
+    border-radius: 5rem;
+}
+.contact-us .contact-us-info form .radio #female:checked ~ label[for="female"],
+.contact-us .contact-us-info form .radio #male:checked ~ label[for="male"]{
+    color: var(--logo-color);
+}
+.contact-us .contact-us-info .submit-button{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--content-background);
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.contact-us .contact-us-info .submit-button:hover{
+    background-color: white;
+    color: var(--logo-color);
+}
+/* End Contact Us */
+
+/* Start Footer */
+.footer{
+    text-align: center;
+}
+.footer .share{
+    padding-top: 2rem;
+}
+.footer .share a{
+    margin: 0 .3rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--button-color);
+    color: var(--logo-color);
+}
+.footer .share a:hover{
+    background-color: var(--logo-color);
+    color: var(--button-color);
+}
+.footer .credit{
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    color: white;
+}
+.footer .credit span{
+    color: var(--logo-color);
+}
+/* End Footer */
+
+
+/* Media Queries */
+@media(max-width:564px){
+    header #menu-btn{
+        display: inline-block;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    header .head .logoName{
+        font-size: 25px;
+        margin-left: -20px;
+    }
+    header .head .navbar{
+        position: absolute;
+        top: 115%; left: -13%; right: -13%;
+        border-top: .1rem solid white;
+        border-bottom: .1rem solid white;
+        background-color: var(--content-background);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .head .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .head .navbar a{
+        display: block;
+        margin: 2rem;
+    }
+    header .head .navbar a:hover{
+        background-color: var(--logo-color);
+        padding: 2px 20px;
+    }
+    header .head .buttons{
+       display: flex;
+    }
+    .home .row{
+        margin-top: 20%;
+        padding-left: 5%;
+    }
+    .home .row .onlineEducation h2{
+        font-size: 4rem;
+    }
+    .counter{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        padding-left: 13%;
+        margin-top: 40px;
+    }
+    .counter .counter-content{
+        margin-bottom: 20px;
+    }
+    .about .image-about{
+        width: 100%;
+        margin-right: 10%;
+    }
+    .about .content-about h2{
+        font-size: 3rem;
+    }
+    .about .content-about p{
+        font-size: 1.5rem;
+    }
+    .contact-us .contact-us-image{
+        width: 80%;
+    }
+    .contact-us .contact-us-info .contact-us-form{
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 565px) and (max-width: 768px){
+    header #menu-btn{
+        display: inline-block;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+    header .head .navbar{
+        position: absolute;
+        top: 115%; left: -13%; right: -13%;
+        border-top: .1rem solid white;
+        border-bottom: .1rem solid white;
+        background-color: var(--content-background);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .head .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .head .navbar a{
+        display: block;
+        margin: 2rem;
+    }
+    header .head .navbar a:hover{
+        background-color: var(--logo-color);
+        padding: 2px 20px;
+    }
+    header .head .buttons{
+        margin-left: 10%;
+    }
+    .home .row{
+        margin-top: 15%;
+        padding-left: 5%;
+    }
+    .home .row .onlineEducation h2{
+        font-size: 6rem;
+    }
+    .counter .counter-content{
+        display: flex;
+        background-color: var(--content-background);
+        margin-right: 20px;
+        width: 300px;
+        padding: 10px;
+        height: 85px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .counter .counter-content img{
+        width: 170%;
+    }
+    .counter .counter-content img.smile{
+        width: 400%;
+    }
+    .about .image-about{
+        width: 100%;
+        margin-right: 10%;
+    }
+    .contact-us .contact-us-image{
+        width: 80%;
+    }
+    .contact-us .contact-us-info .contact-us-form{
+        width: 80%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1080px){
+    header .head .logoName{
+        font-size: 20px;
+        margin-left: -60px;
+    }
+    header .head .buttons{
+        display: block;
+        margin-left: 20px;
+    }
+    header .head .buttons .login{
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+    header .head .navbar{
+        display: flex;
+    }
+    header .head .navbar a:hover{
+        color: var(--logo-color);
+    }
+    .home .row{
+        margin-top: 22%;
+        padding-left: 5%;
+    }
+    .home .row .onlineEducation h2{
+        font-size: 5rem;
+        margin-top: 20px;
+    }
+    .counter{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        padding-left: 5%;
+        margin-top: 40px;
+    }
+    .counter .counter-content{
+        margin-bottom: 20px;
+        width: 250%;
+    }
+    .about .image-about{
+        width: 100%;
+        margin-right: 10%;
+    }
+    .about .content-about{
+        padding-left: 5%;
+    }
+    .about .content-about h2{
+        font-size: 5rem;
+    }
+    .about .content-about p{
+        font-size: 1.5rem;
+    }
+    .contact-us .contact-us-image{
+        width: 80%;
+    }
+    .contact-us .contact-us-info .contact-us-form{
+        width: 80%;
+    }
+}
+
